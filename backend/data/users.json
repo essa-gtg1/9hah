@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1776186510976",
+    "name": "essa",
+    "email": "zz891717@gmail.com",
+    "password": "606ce87c1f4a79df3d200934bfe0cfbf5b3f4252d6553f0bbb3bf6d5bb59ebeb",
+    "age": 18,
+    "weight": 95,
+    "height": 179,
+    "points": 0,
+    "level": "مبتدئ",
+    "createdAt": "2026-04-14T17:08:30.976Z"
+  },
+  {
+    "id": "1776188283986",
+    "name": "عبد الملك السيابي",
+    "email": "ee891717@gmail.com",
+    "password": "606ce87c1f4a79df3d200934bfe0cfbf5b3f4252d6553f0bbb3bf6d5bb59ebeb",
+    "age": 19,
+    "weight": 66.8,
+    "height": 164,
+    "points": 10,
+    "level": "مبتدئ",
+    "createdAt": "2026-04-14T17:38:03.986Z"
+  }
+]

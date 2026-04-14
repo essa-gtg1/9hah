@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول | مدار الصحة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(10,110,138,0.25) 0%, transparent 60%), var(--bg-deep); }
+    .auth-card { width: 100%; max-width: 440px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 24px; padding: 40px; box-shadow: var(--shadow), var(--shadow-glow); }
+    .auth-logo { text-align: center; margin-bottom: 32px; }
+    .auth-logo .icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
+    .auth-logo h1 { font-size: 1.6rem; font-weight: 900; background: linear-gradient(135deg, var(--primary-light), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .auth-logo p { color: var(--text-muted); font-size: 0.88rem; margin-top: 6px; }
+    .divider-text { display: flex; align-items: center; gap: 12px; color: var(--text-muted); font-size: 0.82rem; margin: 20px 0; }
+    .divider-text::before, .divider-text::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  </style>
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="icon">⚕️</span>
+      <h1>مدار الصحة</h1>
+      <p>سجّل الدخول للوصول إلى لوحة التحكم</p>
+    </div>
+
+    <div id="authMsg"></div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label class="form-label">📧 البريد الإلكتروني</label>
+        <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🔒 كلمة المرور</label>
+        <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:8px;">
+        تسجيل الدخول
+      </button>
+    </form>
+
+    <div class="divider-text">أو</div>
+
+    <a href="register.html" class="btn btn-secondary btn-block">✨ إنشاء حساب جديد</a>
+
+    <div style="text-align:center;margin-top:24px;">
+      <a href="index.html" style="color:var(--text-muted);font-size:0.85rem;text-decoration:none;">← العودة للرئيسية</a>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

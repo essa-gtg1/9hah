@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدار الصحة | منصة إدارة السكري والسمنة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕️</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand">
+    <div class="brand-icon">⚕️</div>
+    <span class="brand-name">مدار الصحة</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">الرئيسية</a>
+    <a href="diabetes.html" class="nav-link">السكري</a>
+    <a href="obesity.html" class="nav-link">السمنة</a>
+    <a href="dashboard.html" class="nav-link">لوحة التحكم</a>
+    <a href="login.html" class="nav-link nav-btn">دخول</a>
+  </div>
+  <div class="hamburger" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">🏥 منصة صحية متكاملة</div>
+      <h1 class="hero-title">
+        مدار
+        <span class="highlight">الصحة</span>
+      </h1>
+      <p class="hero-desc">
+        منصة متكاملة لمساعدة مرضى السكري وتحسين نمط الحياة.
+        تتبع، راقب، وتحكم في صحتك بذكاء.
+      </p>
+      <div class="hero-btns">
+        <a href="register.html" class="btn btn-primary btn-lg">🚀 ابدأ الآن مجاناً</a>
+        <a href="#about" class="btn btn-secondary btn-lg">اعرف أكثر ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num">+500</span>
+          <span class="label">مستخدم نشط</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">98%</span>
+          <span class="label">رضا المستخدمين</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">24/7</span>
+          <span class="label">متوفر دائماً</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <div class="float-icon">💉</div>
+        <div class="float-label">آخر قراءة</div>
+        <div class="float-value">98 mg/dL</div>
+      </div>
+      <div class="hero-card">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#0a6e8a,#1db88a);display:flex;align-items:center;justify-content:center;">📊</div>
+          <div>
+            <div style="font-weight:700;font-size:0.9rem;">لوحة المتابعة</div>
+            <div style="color:var(--text-muted);font-size:0.75rem;">اليوم الثلاثاء</div>
+          </div>
+        </div>
+        <div class="glucose-display">
+          <span class="glucose-value">98</span>
+          <span class="glucose-unit">mg/dL - سكر الدم</span>
+          <div><span class="glucose-status">✅ طبيعي</span></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:16px;font-size:0.8rem;color:var(--text-muted);">
+          <span>آخر 7 أيام</span>
+          <span style="color:var(--secondary)">↓ تحسن 12%</span>
+        </div>
+        <div class="mini-chart">
+          <div class="mini-bar good" style="height:40%"></div>
+          <div class="mini-bar" style="height:65%"></div>
+          <div class="mini-bar high" style="height:90%"></div>
+          <div class="mini-bar" style="height:70%"></div>
+          <div class="mini-bar good" style="height:50%"></div>
+          <div class="mini-bar good" style="height:45%"></div>
+          <div class="mini-bar good" style="height:42%"></div>
+        </div>
+      </div>
+      <div class="floating-card card-2">
+        <div class="float-icon">🏃</div>
+        <div class="float-label">نشاط اليوم</div>
+        <div class="float-value">4,230 خطوة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="section-header centered">
+      <div class="section-badge">🎯 ما نقدمه</div>
+      <h2 class="section-title">منصة شاملة لصحة أفضل</h2>
+      <p class="section-desc">كل ما تحتاجه لإدارة صحتك في مكان واحد — من تتبع السكر إلى التغذية والرياضة.</p>
+    </div>
+    <div class="cards-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;">
+      <div class="card">
+        <div class="card-icon blue">📊</div>
+        <div class="card-title">تتبع السكري</div>
+        <div class="card-text">سجّل قراءات السكر يومياً وشاهد تقدمك عبر رسوم بيانية تفاعلية مع تنبيهات ذكية.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">⚖️</div>
+        <div class="card-title">إدارة الوزن</div>
+        <div class="card-text">احسب مؤشر كتلة الجسم وتتبع وزنك بمرور الوقت مع نصائح مخصصة لوضعك.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon orange">💊</div>
+        <div class="card-title">تذكير الأدوية</div>
+        <div class="card-text">أضف أدويتك وأوقاتها واحصل على تنبيهات تضمن عدم نسيان أي جرعة.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon blue">🍽️</div>
+        <div class="card-title">خطة غذائية ذكية</div>
+        <div class="card-text">خطط وجبات يومية مخصصة بناءً على هدفك — خسارة وزن أو المحافظة عليه.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🏋️</div>
+        <div class="card-title">برنامج رياضي</div>
+        <div class="card-text">خطط تمارين متدرجة تناسب مستواك من مبتدئ إلى متقدم لتحسين لياقتك.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon orange">🤖</div>
+        <div class="card-title">مساعد صحي ذكي</div>
+        <div class="card-text">اسأل مساعدنا الصحي أي وقت عن التغذية والسكري والسمنة واحصل على إجابات فورية.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIABETES OVERVIEW -->
+<section class="section" style="background:rgba(10,110,138,0.05);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="about-grid">
+      <div>
+        <div class="section-badge">🩸 السكري</div>
+        <h2 class="section-title">ما هو مرض السكري؟</h2>
+        <p style="color:var(--text-secondary);margin-bottom:20px;line-height:1.8;">
+          مرض السكري هو اضطراب مزمن يؤثر على كيفية استخدام الجسم للجلوكوز (السكر) كمصدر للطاقة.
+          يحدث عندما لا يستطيع البنكرياس إنتاج كمية كافية من الأنسولين، أو عندما لا يستخدم الجسم الأنسولين بشكل فعّال.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid var(--border);">
+            <span style="font-size:1.3rem;">🔴</span>
+            <div><strong>النوع الأول:</strong> <span style="color:var(--text-secondary)">الجهاز المناعي يهاجم خلايا البنكرياس</span></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid var(--border);">
+            <span style="font-size:1.3rem;">🟡</span>
+            <div><strong>النوع الثاني:</strong> <span style="color:var(--text-secondary)">الأكثر شيوعاً - مقاومة الأنسولين</span></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid var(--border);">
+            <span style="font-size:1.3rem;">🤰</span>
+            <div><strong>سكري الحمل:</strong> <span style="color:var(--text-secondary)">يحدث خلال الحمل ويختفي بعده</span></div>
+          </div>
+        </div>
+        <a href="diabetes.html" class="btn btn-primary">اعرف أكثر عن السكري →</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="stat-card">
+          <div class="stat-icon" style="background:rgba(232,69,69,0.15);color:var(--danger);">⚠️</div>
+          <div class="stat-body">
+            <div class="stat-value" style="color:var(--danger);">537 مليون</div>
+            <div class="stat-label">مصاب بالسكري عالمياً - 2021</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:rgba(240,165,0,0.15);color:var(--accent);">📈</div>
+          <div class="stat-body">
+            <div class="stat-value" style="color:var(--accent);">90%</div>
+            <div class="stat-label">من حالات السكري من النوع الثاني قابلة للوقاية</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:rgba(29,184,138,0.15);color:var(--secondary);">✅</div>
+          <div class="stat-body">
+            <div class="stat-value" style="color:var(--secondary);">30 دقيقة</div>
+            <div class="stat-label">رياضة يومية تقلل خطر الإصابة بنسبة 58%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBESITY OVERVIEW -->
+<section class="section">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="about-grid">
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="card" style="padding:24px;">
+          <div style="font-size:2rem;margin-bottom:12px;">📊 مؤشر كتلة الجسم (BMI)</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="color:#3498db;">■ نحيف</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;">BMI &lt; 18.5</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="color:#2ecc71;">■ وزن طبيعي</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;">18.5 – 24.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="color:#f39c12;">■ زيادة في الوزن</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;">25 – 29.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="color:#e74c3c;">■ سمنة</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;">BMI ≥ 30</span>
+            </div>
+          </div>
+          <div class="bmi-bar" style="margin-top:20px;">
+            <div class="bmi-segment bmi-seg-1"></div>
+            <div class="bmi-segment bmi-seg-2"></div>
+            <div class="bmi-segment bmi-seg-3"></div>
+            <div class="bmi-segment bmi-seg-4"></div>
+          </div>
+        </div>
+        <div class="alert alert-warning">
+          ⚠️ السمنة تزيد خطر الإصابة بالسكري من النوع الثاني بنسبة تصل إلى 80 ضعفاً
+        </div>
+      </div>
+      <div>
+        <div class="section-badge">⚖️ السمنة</div>
+        <h2 class="section-title">السمنة والعلاقة بالسكري</h2>
+        <p style="color:var(--text-secondary);margin-bottom:20px;line-height:1.8;">
+          السمنة هي تراكم مفرط للدهون في الجسم يؤثر سلباً على الصحة. وهي تُعدّ من أهم عوامل الخطر للإصابة بالسكري من النوع الثاني.
+          الدهون الزائدة، خاصةً في منطقة البطن، تسبب مقاومة الأنسولين.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+          <div style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="font-size:1.2rem;margin-top:2px;">🫀</span>
+            <div><strong>أمراض القلب:</strong> <span style="color:var(--text-secondary)">زيادة 200% في خطر الإصابة</span></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="font-size:1.2rem;margin-top:2px;">🩸</span>
+            <div><strong>ارتفاع الضغط:</strong> <span style="color:var(--text-secondary)">60% من المصابين بالسمنة يعانون من ارتفاع الضغط</span></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="font-size:1.2rem;margin-top:2px;">🦴</span>
+            <div><strong>مشاكل المفاصل:</strong> <span style="color:var(--text-secondary)">الضغط الزائد يتلف المفاصل تدريجياً</span></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="font-size:1.2rem;margin-top:2px;">😴</span>
+            <div><strong>انقطاع التنفس النومي:</strong> <span style="color:var(--text-secondary)">7 أضعاف أكثر شيوعاً في السمنة</span></div>
+          </div>
+        </div>
+        <a href="obesity.html" class="btn btn-success">استكشف برنامج السمنة →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES CTA -->
+<section class="section" style="background:linear-gradient(135deg,rgba(10,110,138,0.15),rgba(29,184,138,0.1));border-top:1px solid var(--border);">
+  <div class="section-inner" style="text-align:center;">
+    <h2 class="section-title" style="margin-bottom:16px;">ابدأ رحلتك الصحية اليوم</h2>
+    <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 36px;">سجّل الآن مجاناً وابدأ في تتبع صحتك بطريقة ذكية وفعّالة</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="register.html" class="btn btn-primary btn-lg">📝 تسجيل مجاني</a>
+      <a href="diabetes.html" class="btn btn-secondary btn-lg">📘 تعلم عن السكري</a>
+      <a href="obesity.html" class="btn btn-secondary btn-lg">⚖️ برنامج السمنة</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">⚕️ مدار الصحة</div>
+        <div class="footer-desc">منصة صحية متكاملة لمساعدة مرضى السكري وتحسين نمط الحياة. نقدم أدوات تتبع ذكية وخطط غذائية ورياضية مخصصة.</div>
+      </div>
+      <div>
+        <div class="footer-heading">روابط سريعة</div>
+        <ul class="footer-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="diabetes.html">السكري</a></li>
+          <li><a href="obesity.html">السمنة</a></li>
+          <li><a href="dashboard.html">لوحة التحكم</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">الحساب</div>
+        <ul class="footer-links">
+          <li><a href="login.html">تسجيل الدخول</a></li>
+          <li><a href="register.html">إنشاء حساب</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2024 مدار الصحة. جميع الحقوق محفوظة.</div>
+      <div style="color:var(--text-muted);font-size:0.82rem;">🇴🇲 مُصمم للمجتمع العربي</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Responsive about grids
+  const grids = document.querySelectorAll('.about-grid');
+  if (window.innerWidth < 900) grids.forEach(g => g.style.gridTemplateColumns = '1fr');
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 900) grids.forEach(g => g.style.gridTemplateColumns = '1fr');
+    else grids.forEach(g => g.style.gridTemplateColumns = '1fr 1fr');
+  });
+</script>
+</body>
+</html>

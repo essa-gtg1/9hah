@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب | مدار الصحة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; padding-top: 40px; padding-bottom: 40px; background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(29,184,138,0.15) 0%, transparent 60%), var(--bg-deep); }
+    .auth-card { width: 100%; max-width: 500px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 24px; padding: 40px; box-shadow: var(--shadow), var(--shadow-glow); }
+    .auth-logo { text-align: center; margin-bottom: 32px; }
+    .auth-logo .icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
+    .auth-logo h1 { font-size: 1.6rem; font-weight: 900; background: linear-gradient(135deg, var(--primary-light), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .auth-logo p { color: var(--text-muted); font-size: 0.88rem; margin-top: 6px; }
+  </style>
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="icon">🌟</span>
+      <h1>إنشاء حساب جديد</h1>
+      <p>انضم إلى مدار الصحة وابدأ رحلتك الصحية</p>
+    </div>
+
+    <div id="authMsg"></div>
+
+    <form id="registerForm">
+      <div class="form-group">
+        <label class="form-label">👤 الاسم الكامل</label>
+        <input type="text" id="name" class="form-control" placeholder="محمد عبدالله" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">📧 البريد الإلكتروني</label>
+        <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">🔒 كلمة المرور</label>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">🔒 تأكيد المرور</label>
+          <input type="password" id="confirmPass" class="form-control" placeholder="••••••••" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">🎂 العمر</label>
+          <input type="number" id="age" class="form-control" placeholder="35" min="5" max="120">
+        </div>
+        <div class="form-group">
+          <label class="form-label">⚖️ الوزن (كغ)</label>
+          <input type="number" id="weight" class="form-control" placeholder="75" min="20" max="300" step="0.1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">📏 الطول (سم)</label>
+        <input type="number" id="height" class="form-control" placeholder="170" min="100" max="250">
+      </div>
+
+      <div class="alert alert-info" style="margin-bottom:16px;">
+        ℹ️ بيانات الوزن والطول تُستخدم لحساب مؤشر كتلة الجسم والسعرات الحرارية.
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">
+        🚀 إنشاء الحساب
+      </button>
+    </form>
+
+    <div style="text-align:center;margin-top:20px;color:var(--text-muted);font-size:0.88rem;">
+      لديك حساب؟ <a href="login.html" style="color:var(--primary-light);text-decoration:none;font-weight:600;">سجّل الدخول</a>
+    </div>
+
+    <div style="text-align:center;margin-top:16px;">
+      <a href="index.html" style="color:var(--text-muted);font-size:0.85rem;text-decoration:none;">← العودة للرئيسية</a>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

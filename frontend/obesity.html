@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السمنة وعلاجها | مدار الصحة</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand">
+    <div class="brand-icon">⚕️</div>
+    <span class="brand-name">مدار الصحة</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">الرئيسية</a>
+    <a href="diabetes.html" class="nav-link">السكري</a>
+    <a href="obesity.html" class="nav-link active">السمنة</a>
+    <a href="dashboard.html" class="nav-link">لوحة التحكم</a>
+    <a href="login.html" class="nav-link nav-btn">دخول</a>
+  </div>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-breadcrumb"><a href="index.html">الرئيسية</a> / السمنة وعلاجها</div>
+    <h1 class="page-title">⚖️ السمنة وعلاجها</h1>
+    <p style="color:var(--text-secondary);margin-top:8px;">أدوات ذكية لحساب BMI والسعرات وخطط الغذاء والرياضة</p>
+  </div>
+</div>
+
+<section class="section" style="padding-top:40px;">
+  <div class="section-inner">
+
+    <!-- OBESITY RISKS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-bottom:50px;" class="intro-grid">
+      <div>
+        <div class="section-badge">⚠️ مخاطر السمنة</div>
+        <h2 class="section-title">لماذا السمنة خطيرة؟</h2>
+        <p style="color:var(--text-secondary);margin-bottom:20px;">السمنة ليست مجرد مشكلة في المظهر — هي مرض مزمن يزيد خطر الإصابة بأمراض خطيرة.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid rgba(232,69,69,0.2);">
+            <span style="font-size:1.2rem;">🩸</span>
+            <span><strong>السكري من النوع 2:</strong> <span style="color:var(--text-muted);font-size:0.88rem;">خطر أعلى بـ80 مرة</span></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid rgba(232,69,69,0.2);">
+            <span style="font-size:1.2rem;">🫀</span>
+            <span><strong>أمراض القلب:</strong> <span style="color:var(--text-muted);font-size:0.88rem;">ارتفاع ضغط الدم والكوليسترول</span></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid rgba(232,69,69,0.2);">
+            <span style="font-size:1.2rem;">🦴</span>
+            <span><strong>مشاكل المفاصل:</strong> <span style="color:var(--text-muted);font-size:0.88rem;">التهاب المفاصل والآلام</span></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid rgba(232,69,69,0.2);">
+            <span style="font-size:1.2rem;">😴</span>
+            <span><strong>انقطاع التنفس النومي:</strong> <span style="color:var(--text-muted);font-size:0.88rem;">التوقف عن التنفس أثناء النوم</span></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg-card);border-radius:var(--radius-sm);border:1px solid rgba(232,69,69,0.2);">
+            <span style="font-size:1.2rem;">🧠</span>
+            <span><strong>الاكتئاب والقلق:</strong> <span style="color:var(--text-muted);font-size:0.88rem;">تأثير نفسي واجتماعي كبير</span></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div style="font-size:1.1rem;font-weight:800;margin-bottom:20px;color:var(--primary-light);">📊 العلاقة بين السمنة والسكري</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <span style="font-size:0.88rem;">وزن طبيعي</span>
+            <div style="flex:1;margin:0 12px;"><div class="progress"><div class="progress-bar" style="width:20%;background:var(--secondary);"></div></div></div>
+            <span style="color:var(--secondary);font-weight:700;font-size:0.85rem;">20%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <span style="font-size:0.88rem;">زيادة وزن</span>
+            <div style="flex:1;margin:0 12px;"><div class="progress"><div class="progress-bar" style="width:45%;background:var(--accent);"></div></div></div>
+            <span style="color:var(--accent);font-weight:700;font-size:0.85rem;">45%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <span style="font-size:0.88rem;">سمنة</span>
+            <div style="flex:1;margin:0 12px;"><div class="progress"><div class="progress-bar" style="width:80%;background:var(--danger);"></div></div></div>
+            <span style="color:var(--danger);font-weight:700;font-size:0.85rem;">80%</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--text-muted);text-align:center;">نسبة خطر الإصابة بالسكري</div>
+          <div class="divider"></div>
+          <div style="text-align:center;">
+            <div style="font-size:0.88rem;color:var(--text-muted);margin-bottom:12px;">ابدأ بحساب مؤشر كتلة جسمك</div>
+            <a href="#bmi-section" class="btn btn-success">احسب BMI الآن ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOLS TABS -->
+    <div id="bmi-section" style="scroll-margin-top:90px;">
+      <div class="section-header">
+        <div class="section-badge">🛠️ الأدوات</div>
+        <h2 class="section-title">أدوات إدارة الوزن</h2>
+      </div>
+
+      <div class="tabs" style="margin-bottom:28px;">
+        <button class="tab active" data-target="tab-bmi">⚖️ BMI</button>
+        <button class="tab" data-target="tab-calories">🔥 السعرات</button>
+        <button class="tab" data-target="tab-diet">🍽️ الخطة الغذائية</button>
+        <button class="tab" data-target="tab-workout">🏋️ برنامج الرياضة</button>
+        <button class="tab" data-target="tab-risk">🧪 اختبار الخطر</button>
+      </div>
+
+      <!-- BMI TAB -->
+      <div class="tab-content active" id="tab-bmi">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;" class="tool-grid">
+          <div class="card">
+            <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:20px;">🧮 حاسبة مؤشر كتلة الجسم</h3>
+            <form id="bmiForm">
+              <div class="form-group">
+                <label class="form-label">⚖️ الوزن (كيلوغرام)</label>
+                <input type="number" id="bmiWeight" class="form-control" placeholder="70" min="20" max="300" step="0.1" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">📏 الطول (سنتيمتر)</label>
+                <input type="number" id="bmiHeight" class="form-control" placeholder="170" min="100" max="250" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">احسب BMI</button>
+            </form>
+          </div>
+          <div>
+            <div id="bmiResult" style="display:none;"></div>
+            <div class="card" style="margin-top:16px;">
+              <div style="font-weight:700;margin-bottom:14px;color:var(--primary-light);">📐 جدول تصنيف BMI</div>
+              <table>
+                <thead><tr><th>الفئة</th><th>قيمة BMI</th><th>الحالة</th></tr></thead>
+                <tbody>
+                  <tr><td>نحيف</td><td>&lt; 18.5</td><td><span class="badge" style="background:rgba(52,152,219,0.2);color:#3498db">نحيف</span></td></tr>
+                  <tr><td>طبيعي</td><td>18.5 – 24.9</td><td><span class="badge badge-success">✅ مثالي</span></td></tr>
+                  <tr><td>زيادة وزن</td><td>25 – 29.9</td><td><span class="badge badge-warning">⚠️ زيادة</span></td></tr>
+                  <tr><td>سمنة</td><td>≥ 30</td><td><span class="badge badge-danger">🚨 سمنة</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALORIES TAB -->
+      <div class="tab-content" id="tab-calories">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;" class="tool-grid">
+          <div class="card">
+            <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:20px;">🔥 حاسبة السعرات الحرارية</h3>
+            <form id="calorieForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">🎂 العمر</label>
+                  <input type="number" id="calAge" class="form-control" placeholder="30" min="10" max="100" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">👤 الجنس</label>
+                  <select id="calGender" class="form-control">
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">⚖️ الوزن (كغ)</label>
+                  <input type="number" id="calWeight" class="form-control" placeholder="70" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">📏 الطول (سم)</label>
+                  <input type="number" id="calHeight" class="form-control" placeholder="170" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">🏃 مستوى النشاط</label>
+                <select id="calActivity" class="form-control">
+                  <option value="1.2">خامل (لا رياضة)</option>
+                  <option value="1.375">خفيف (1-3 أيام/أسبوع)</option>
+                  <option value="1.55" selected>متوسط (3-5 أيام/أسبوع)</option>
+                  <option value="1.725">نشيط (6-7 أيام/أسبوع)</option>
+                  <option value="1.9">نشيط جداً (2× يومياً)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">احسب السعرات</button>
+            </form>
+          </div>
+          <div>
+            <div id="calorieResult" style="display:none;"></div>
+            <div class="card" style="margin-top:16px;">
+              <div style="font-weight:700;margin-bottom:12px;color:var(--primary-light);">ℹ️ نصائح تغذوية</div>
+              <div style="display:flex;flex-direction:column;gap:8px;font-size:0.88rem;color:var(--text-secondary);">
+                <div>🥗 وزّع وجباتك على 3-5 وجبات يومياً</div>
+                <div>🥩 30% بروتين + 40% كربوهيدرات + 30% دهون</div>
+                <div>💧 اشرب 500ml قبل كل وجبة رئيسية</div>
+                <div>⏰ لا تأكل بعد الساعة 9 مساءً</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIET PLAN TAB -->
+      <div class="tab-content" id="tab-diet">
+        <div class="card">
+          <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:20px;">🍽️ خطة غذائية ذكية</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;" class="tool-grid">
+            <div class="form-group">
+              <label class="form-label">🎯 هدفك</label>
+              <select id="dietGoal" class="form-control">
+                <option value="lose">خسارة الوزن</option>
+                <option value="maintain">المحافظة على الوزن</option>
+                <option value="gain">زيادة الوزن</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">🔥 إجمالي السعرات اليومية</label>
+              <input type="number" id="dietCalories" class="form-control" placeholder="2000" min="1000" max="4000">
+            </div>
+          </div>
+          <button id="generateDietBtn" class="btn btn-success btn-lg">✨ توليد الخطة الغذائية</button>
+        </div>
+        <div id="dietPlanResult" style="display:none;margin-top:20px;"></div>
+      </div>
+
+      <!-- WORKOUT TAB -->
+      <div class="tab-content" id="tab-workout">
+        <div class="card">
+          <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:20px;">🏋️ برنامج التمارين</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;" class="tool-grid">
+            <div class="form-group">
+              <label class="form-label">💪 مستوى اللياقة</label>
+              <select id="fitnessLevel" class="form-control">
+                <option value="beginner">مبتدئ</option>
+                <option value="intermediate">متوسط</option>
+                <option value="advanced">متقدم</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">🎯 الهدف</label>
+              <select id="workoutGoal" class="form-control">
+                <option value="lose">حرق الدهون</option>
+                <option value="maintain">الحفاظ على اللياقة</option>
+                <option value="strength">بناء العضلات</option>
+                <option value="cardio">تحسين القلب والتنفس</option>
+              </select>
+            </div>
+          </div>
+          <button id="generateWorkoutBtn" class="btn btn-primary btn-lg">🏃 توليد البرنامج</button>
+        </div>
+        <div id="workoutPlanResult" style="display:none;margin-top:20px;"></div>
+      </div>
+
+      <!-- RISK TEST TAB -->
+      <div class="tab-content" id="tab-risk">
+        <div class="card">
+          <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:6px;">🧪 اختبار خطر الإصابة بالسكري</h3>
+          <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:24px;">أجب على الأسئلة التالية للحصول على تقييم مبدئي لخطر إصابتك بالسكري</p>
+          <form id="riskForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">🎂 عمرك</label>
+                <input type="number" id="riskAge" class="form-control" placeholder="35" min="10" max="100" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">🧬 هل لديك أقارب مصابون بالسكري؟</label>
+                <select id="riskFamily" class="form-control">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">⚖️ مؤشر BMI (اختياري)</label>
+                <input type="number" id="riskBMI" class="form-control" placeholder="25" min="10" max="60" step="0.1">
+              </div>
+              <div class="form-group">
+                <label class="form-label">🏃 مستوى نشاطك البدني</label>
+                <select id="riskActivity" class="form-control">
+                  <option value="normal">نشيط (30+ دقيقة/يوم)</option>
+                  <option value="low">خامل (أقل من 30 دقيقة/يوم)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">🩸 هل لديك ضغط دم مرتفع؟</label>
+                <select id="riskBP" class="form-control">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">🍭 هل سبق وتجاوز سكرك الطبيعي؟</label>
+                <select id="riskSugar" class="form-control">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg" style="margin-top:8px;">🔍 تقييم مستوى الخطر</button>
+          </form>
+          <div id="riskResult" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:linear-gradient(135deg,rgba(29,184,138,0.15),rgba(10,110,138,0.1));border:1px solid var(--border);border-radius:var(--radius);padding:36px;text-align:center;margin-top:40px;">
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:12px;">تتبع وزنك وتقدمك</h3>
+      <p style="color:var(--text-secondary);margin-bottom:24px;">سجّل للوصول إلى لوحة التحكم الكاملة مع رسوم بيانية لتقدمك</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="register.html" class="btn btn-success btn-lg">📝 إنشاء حساب مجاني</a>
+        <a href="login.html" class="btn btn-secondary btn-lg">🔑 تسجيل الدخول</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div style="text-align:center;padding:20px 0;color:var(--text-muted);">
+      © 2024 مدار الصحة | <a href="index.html" style="color:var(--primary-light);text-decoration:none;">العودة للرئيسية</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+<script>
+  // Fix tool-grids for mobile
+  const toolGrids = document.querySelectorAll('.tool-grid, .intro-grid');
+  function updateToolGrids() {
+    toolGrids.forEach(g => { g.style.gridTemplateColumns = window.innerWidth < 700 ? '1fr' : '1fr 1fr'; });
+  }
+  updateToolGrids();
+  window.addEventListener('resize', updateToolGrids);
+
+  // Tabs wiring for obesity page (manual since no data-group)
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.target);
+      if (target) target.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
